@@ -21,12 +21,12 @@ A Python application that processes a text-based article, generates an HTML repr
 1.  Clone the repository:
 
     
-    `git clone https://github.com/BakerBart/python-article-parser.git
-    cd python-article-parser` 
+    `git clone https://github.com/BakerBart/python-article-parser.git`\
+    `cd python-article-parser` 
     
 3.  Install required dependencies:
     
-    `pip install openai` 
+    `pip install -r requirements.txt` 
     
 4.  Ensure you have your OpenAI API key configured. Set it in your environment:
     
@@ -34,17 +34,17 @@ A Python application that processes a text-based article, generates an HTML repr
 
 ---
 ## Usage
-1.  Place the source text in `source_text.txt`.
-2.  Run the application:
+1.  Run the application:
 
     `python main.py` 
     
-3.  Outputs:
+2.  Outputs:
     -   Generated article HTML: `artykul.html`
     -   Complete preview: `podglad.html`
 
 ---
-## Customizing the Template
+## Customizing
 
--   Modify `szablon.html` to adjust the styling or structure of the preview template.
+-   You can modify `szablon.html` to adjust the styling or structure of the preview template.
+-   You can modify `source_text.txt` to generate article based on provided text
 
