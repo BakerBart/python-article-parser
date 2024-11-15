@@ -11,6 +11,5 @@ def generate_preview(template_path, article_path, output_path):
     with open(output_path, "w", encoding="utf-8") as output_file:
       output_file.write(full_content)
 
-    print(f"Preview saved to {output_path}.")
   except Exception as e:
     raise IOError(f"Error while generating preview: {e}")

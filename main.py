@@ -15,9 +15,10 @@ def main():
 
         save_html_to_file(generated_html, output_html_file)
 
+        print(f"HTML article saved to {output_html_file}.")
+
         generate_preview(template_file, output_html_file, output_preview_file)
 
-        print(f"HTML article saved to {output_html_file}.")
         print(f"Preview generated and saved to {output_preview_file}.")
 
     except (FileNotFoundError, IOError) as e:
