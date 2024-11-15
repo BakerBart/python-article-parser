@@ -7,7 +7,7 @@ def generate_html_with_openai(article_content):
       "Identify logical sections and ensure proper header hierarchy. "
       "Suggest suitable places for images by including <img src=\"image_placeholder.jpg\" alt=\"Detailed image description - use 10-15 words, which can be used as a prompt to generate this image\"> "
       "and add captions under these images using a proper html tag. Wrap each image and caption inside a <figure> tag. "
-      "Do not include any CSS or JavaScript. "
+      "Do not include any CSS or JavaScript. Do not include any formatting such as Markdown, backticks, or additional comments."
       "Return only the content that will be placed between <body> and </body> tags. Do not use <html>, <head> and <body> tags.\n\n"
       f"Article:\n{article_content}"
     )
